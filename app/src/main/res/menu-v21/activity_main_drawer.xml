@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lugares"
+            android:icon="@drawable/ic_action_lugar"
+            android:title="Buscar Lugares" />
+        <item
+            android:id="@+id/nav_LibrosGuardados"
+            android:icon="@drawable/ic_action_estrella"
+            android:title="Libros Guardados" />
+        <item
+            android:id="@+id/nav_LugaresFavoritos"
+            android:icon="@drawable/ic_action_guar"
+            android:title="Lugares Favoritos" />
+    </group>
+<group
+    android:visible="true">
+    <item android:title="Usuario">
+        <menu>
+            <item
+                android:id="@+id/nav_datos"
+                android:icon="@drawable/ic_action_usu"
+                android:title="Datos" />
+        </menu>
+    </item>
+</group>
+
+    <group
+        android:id="@+id/grupoCUIL"
+        android:visible="true">
+        <item android:title="Lugar">
+            <menu>
+                <item
+                    android:id="@+id/nav_consultar"
+                    android:icon="@drawable/ic_action_milugar"
+                    android:title="Mi Librería" />
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/grupoCuilbiblioteca"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_mibiblioteca"
+            android:icon="@drawable/ic_action_milugar"
+            android:title="Mi Biblioteca" />
+    </group>
+    <group
+        android:id="@+id/grupoDueños"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_scanner"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Escaner" />
+    </group>
+    <group
+        android:id="@+id/grupoDueñosLibreria"
+        android:visible="true">
+        <item
+            android:id="@+id/nav_ventas"
+            android:icon="@drawable/ic_action_ventas"
+            android:title="Ventas" />
+    </group>
+</menu>

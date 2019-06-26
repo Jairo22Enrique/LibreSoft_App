@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse_Biblio"
+    android:background="#eeee">
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_layout"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/bar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="340dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                app:cardCornerRadius="25dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/txtNombre"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:drawableLeft="@drawable/ic_action_name"
+                        android:ems="10"
+                        android:hint="Nombre completo"
+                        android:inputType="text"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:background="@drawable/bt"/>
+
+                    <EditText
+                        android:id="@+id/txtTel"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:ems="10"
+                        android:hint="Telefono"
+                        android:inputType="number"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:drawableLeft="@drawable/ic_action_cel"
+                        android:background="@drawable/bt"/>
+
+                    <EditText
+                        android:id="@+id/txtNo"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:ems="10"
+                        android:hint="Numero de Control"
+                        android:inputType="textPersonName"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:background="@drawable/bt"
+                        android:drawableLeft="@drawable/ic_action_pass"/>
+
+                    <EditText
+                        android:id="@+id/txtEdad"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:hint="Edad"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bt"
+                        android:drawableLeft="@drawable/ic_action_time"/>
+
+                    <Spinner
+                        android:id="@+id/turno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:scrollbarSize="20dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp">
+
+                        <EditText
+                            android:id="@+id/txtGrupo"
+                            android:layout_width="110dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Grupo"
+                            android:inputType="text"
+                            android:layout_marginRight="10dp"
+                            android:textSize="20dp"
+                            android:background="@drawable/bt"
+                            android:drawableLeft="@drawable/ic_action_group"/>
+
+                        <EditText
+                            android:id="@+id/txtGrado"
+                            android:layout_width="110dp"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Grado"
+                            android:inputType="number"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:background="@drawable/bt"
+                            android:drawableLeft="@drawable/ic_action_grade"/>
+                    </LinearLayout>
+<!--
+                    <EditText
+                        android:id="@+id/editText18"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:ems="10"
+                        android:hint="Clave de la Biblioteca"
+                        android:inputType="text"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_action_key"
+                        android:background="@drawable/bt"/>
+-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        app:cardCornerRadius="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <Button
+                            android:id="@+id/btnRegistrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Registrarse"
+                            android:textAllCaps="false"
+                            android:textSize="22dp"
+                            android:background="@android:color/transparent"
+                            android:layout_gravity="center"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

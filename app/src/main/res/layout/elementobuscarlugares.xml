@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="5dp"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/contenedorlugares"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+    <ImageView
+        android:id="@+id/ImagenLugar"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Libreria Universal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pipila sur #16" />
+        <TextView
+            android:id="@+id/txtDisponibles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disponibles: 2"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#0174DF"
+            android:padding="7dp"
+            android:text="$200"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

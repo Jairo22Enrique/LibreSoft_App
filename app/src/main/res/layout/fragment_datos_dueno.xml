@@ -1,0 +1,145 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".DatosDueno">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="#eeeeee">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            app:cardCornerRadius="25dp"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/txtNombreLugar"
+                    android:layout_width="260dp"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Nombre del Local"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_action_local"/>
+
+                <EditText
+                    android:id="@+id/txtDireccion"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:enabled="false"
+                    android:hint="Dirección"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_action_location"/>
+
+                <EditText
+                    android:id="@+id/txtTel"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Teléfono"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_action_cel"/>
+
+                <EditText
+                    android:id="@+id/txtEslogan"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Eslogan"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/ic_action_eslogan"/>
+                <TextView
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:text="Correo"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Spinner
+                    android:id="@+id/estado2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:scrollbarSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/ciudad2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:scrollbarSize="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="25dp"
+
+                        android:backgroundTint="@android:color/holo_blue_light"
+                        android:layout_margin="20dp">
+
+                        <Button
+                            android:id="@+id/btnAnadirU"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cambiar Ubicación"
+                            android:layout_gravity="center"
+                            android:textSize="18dp"
+                            android:textAllCaps="false"
+                            android:padding="8dp"
+                            android:background="@android:color/transparent"/>
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
+

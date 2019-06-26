@@ -1,0 +1,43 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.libresoft.libresoft_app.Mapas.MapasMeterUbicacion" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0174DF">
+        <ImageButton
+            android:id="@+id/btnListo"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_location"
+            android:background="#00055555"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listo"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.libresoft.libresoft_app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- - para usar la camara desde la App -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- escribir en memoria para guardar las fotos -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BLibreriaBiblioteca"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LibrosPrincipal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IngresarDos"
+            android:label="@string/title_activity_ingresar_dos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Mapas.MapasLugaresGeneral"
+            android:label="@string/title_activity_mapas_lugares_general" />
+        <activity
+            android:name=".Lector.CamaraLector"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name=".DatosLibros"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DatosLugar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mapas.MapaLugarEspecifico"
+            android:label="@string/title_activity_mapa_lugar_especifico" />
+        <activity
+            android:name=".ConsultarLibros"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Mapas.MapasLugaresGeneralGeneral"
+            android:label="@string/title_activity_mapas_lugares_general_general" />
+        <activity
+            android:name=".LibrosGuardados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LugaresFavoritos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contacto"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegistroVentas" />
+        <activity
+            android:name=".Datos"
+            android:label="@string/title_activity_datos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Mapas.MapasMeterUbicacion"
+            android:label="@string/title_activity_mapas_meter_ubicacion" />
+        <activity android:name=".Mapas.BuscarUbicacion"></activity>
+        <activity android:name=".Registrarse_Biblio"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

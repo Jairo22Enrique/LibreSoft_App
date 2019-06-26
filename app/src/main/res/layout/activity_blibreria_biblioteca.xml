@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.libresoft.libresoft_app.BLibreriaBiblioteca">
+    <android.support.design.widget.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_layout"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:id="@+id/bar">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:padding="16dp"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/mr_controller_volume_group_list_item_icon_size"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/holo_blue_dark"
+        android:id="@+id/frameLayout"
+        >
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/searchview"
+            android:queryHint="Nombre del lugar"/>
+    </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="20dp"
+        android:text="Buscar: " />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Spinner
+        android:id="@+id/seleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Spinner
+        android:id="@+id/Estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+    <Spinner
+        android:id="@+id/Ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+     <!--   <Button
+            android:id="@+id/btnMapa"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/frameLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:text="Ver en Mapa" />-->
+         <ImageButton
+             android:id="@+id/btnMapa"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignEnd="@+id/frameLayout"
+             android:layout_alignParentBottom="true"
+             android:textAlignment="center"
+             android:src="@drawable/mapita"
+             android:background="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Ver en Mapa"
+            android:gravity="center"
+            android:layout_marginBottom="11dp"/>
+     </LinearLayout>
+
+
+
+     <RelativeLayout
+         android:background="#fff"
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         tools:context="xyz.libresoft.libresoft_app.DatosLibros"
+         android:layout_marginTop="6dp"
+         >
+
+         <android.support.v7.widget.RecyclerView
+             android:id="@+id/rvLugares"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="13dp"
+              />
+     </RelativeLayout>
+
+ </LinearLayout>
+
+ </android.support.v4.widget.NestedScrollView>
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_margin="@dimen/fab_margin"
+         android:background="#0174DF"
+         app:backgroundTint="#0174DF"
+         app:srcCompat="@android:drawable/ic_search_category_default" />
+
+ </android.support.design.widget.CoordinatorLayout>

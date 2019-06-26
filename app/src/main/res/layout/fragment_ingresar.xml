@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/font"
+    tools:context="xyz.libresoft.libresoft_app.Ingresar">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ico_bueno_libresoft" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:background="@drawable/bt"
+        android:ems="10"
+        android:hint=" Correo"
+        android:inputType="textEmailAddress"
+        android:textSize="@dimen/mr_controller_volume_group_list_item_icon_size"
+        android:padding="6dp"/>
+
+    <EditText
+        android:id="@+id/txtContra"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/txtCorreo"
+        android:layout_below="@+id/txtCorreo"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:background="@drawable/bt"
+        android:hint=" Contraseña"
+        android:inputType="textPassword"
+        android:textSize="@dimen/mr_controller_volume_group_list_item_icon_size"
+        android:padding="6dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtContra"
+        android:layout_marginTop="45dp"
+        app:cardCornerRadius="25dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/ing"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/txtContra"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="Ingresar"
+            android:textSize="@dimen/mr_controller_volume_group_list_item_icon_size" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="20dp"
+        android:text="Deslice para registrar"
+        android:textColor="@android:color/white"
+        android:textSize="19dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/next"
+        android:layout_marginEnd="87dp"
+        android:layout_marginTop="-48dp"
+        android:src="@drawable/before" />
+</RelativeLayout>
